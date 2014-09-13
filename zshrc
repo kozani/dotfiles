@@ -186,8 +186,8 @@ esac
 # Load LS_COLORS
 eval `dircolors ~/.dir_colors`
 # Turn on italics
-#tic ~/.xterm-256color-italic.terminfo
-#export TERM=xterm-256color-italic
+tic ~/.xterm-256color-italic.terminfo
+export TERM=xterm-256color-italic
 
 # ----- function -------------------------------------------------------------
 update() {
