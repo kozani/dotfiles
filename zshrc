@@ -186,8 +186,8 @@ esac
 # Load LS_COLORS
 eval `dircolors ~/.dir_colors`
 # Turn on italics
-tic ~/.xterm-256color-italic.terminfo
-export TERM=xterm-256color-italic
+#tic ~/.xterm-256color-italic.terminfo
+#export TERM=xterm-256color-italic
 
 # ----- function -------------------------------------------------------------
 update() {
@@ -319,8 +319,8 @@ source $HOME/.zfunctions/syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To color each machine's prompt differently
 case `hostname` in
-  *MacBook*)
-    PROMPT_PURE_DIR_COLOR="%F{093}"
+  *mbp*)
+    PROMPT_PURE_DIR_COLOR="%F{225}"
     ;;
   *andrew*|*gates*|*shark*)
     PROMPT_PURE_DIR_COLOR="%F{076}"
