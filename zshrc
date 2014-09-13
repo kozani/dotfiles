@@ -320,28 +320,10 @@ source $HOME/.zfunctions/syntax-highlighting/zsh-syntax-highlighting.zsh
 # To color each machine's prompt differently
 case `hostname` in
   *mbp*)
-    PROMPT_PURE_DIR_COLOR="%F{225}"
+    PROMPT_PURE_DIR_COLOR="%F{218}"
     ;;
   *andrew*|*gates*|*shark*)
-    PROMPT_PURE_DIR_COLOR="%F{076}"
-    ;;
-  alarmpi)
-    PROMPT_PURE_DIR_COLOR="%F{027}"
-    ;;
-  jake-raspi)
-    PROMPT_PURE_DIR_COLOR="%F{164}"
-    ;;
-  *xubuntu*)
-    PROMPT_PURE_DIR_COLOR="%F{057}"
-    ;;
-  pop.scottylabs.org)
-    PROMPT_PURE_DIR_COLOR="%F{227}"
-    ;;
-  scottylabs)
-    PROMPT_PURE_DIR_COLOR="%F{202}"
-    ;;
-  metagross)
-    PROMPT_PURE_DIR_COLOR="%F{027}"
+    PROMPT_PURE_DIR_COLOR="%F{226}"
     ;;
   *)
     PROMPT_PURE_DIR_COLOR="%F{196}"
