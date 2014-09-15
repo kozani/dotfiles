@@ -114,14 +114,14 @@ alias gll="git log --pretty=oneline --graph --decorate --abbrev-commit --all"
 
 # ----- per machine setup ----------------------------------------------------
 case `hostname` in
-  *Jacobs-MacBook-Air*)
+  *mbp*)
     # GNU coreutils with their actual names
     export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
     export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
     # aliases 
-    alias resethostname='sudo scutil --set HostName Jacobs-MacBook-Air'
-    alias kinitandrew="kinit jezimmer@ANDREW.CMU.EDU"
+    alias resethostname='sudo scutil --set HostName Annies-mbp'
+    alias kinitandrew="kinit anniec1@ANDREW.CMU.EDU"
     alias vim="/usr/local/bin/vim"
     alias sml="rlwrap sml"
     which coffee &> /dev/null && alias coffe="coffee"
@@ -131,9 +131,9 @@ case `hostname` in
 
     # ruby...
     # To use Homebrew's directories rather than ~/.rbenv
-    export RBENV_ROOT="/usr/local/var/rbenv"
-    export PATH="$HOME/.rbenv/bin:$PATH"
-    eval "$(rbenv init -)"
+    #export RBENV_ROOT="/usr/local/var/rbenv"
+    #export PATH="$HOME/.rbenv/bin:$PATH"
+    #eval "$(rbenv init -)"
 
     alias bex="bundle exec"
     
