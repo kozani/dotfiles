@@ -196,7 +196,7 @@ update() {
 
   # Mac updates
   case `hostname` in
-    *Jacobs-MacBook-Air*)
+    *mbp*)
       echo "$cblueb==>$cwhiteb Updating Homebrew...$cnone"
       brew update
 
